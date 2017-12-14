@@ -8,8 +8,13 @@ $(document).ready(function(){
         // onOpen: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is opened
         // onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
     });
-    var initmap = function initmap(){
-        
-        return
-    }
 });
+var config = {
+    apiKey: "AIzaSyAprNzrbuZ_vyk9ZICWESoZ2g-lQjSMiW0",
+    authDomain: "vacation-traveler.firebaseapp.com",
+    databaseURL: "https://vacation-traveler.firebaseio.com",
+    projectId: "vacation-traveler",
+    storageBucket: "vacation-traveler.appspot.com",
+    messagingSenderId: "977337314611"
+  };
+  firebase.initializeApp(config);
