@@ -18,3 +18,24 @@ var config = {
     messagingSenderId: "977337314611"
   };
   firebase.initializeApp(config);
+
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+  
+  //grabbing user input 
+  $("#login,#create").on("click", function () {
+        
+                document.getElementById("activities").style.display = "block";
+        
+            });
+
+    $("#login,#create").on("click", function () {
+                
+                document.getElementById("mainCard").style.display = "none";
+                
+             });
+        

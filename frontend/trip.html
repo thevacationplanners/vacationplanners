@@ -46,7 +46,7 @@
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">lock</i>
-                            <input id="icon_lock" type="tel" class="validate" required>
+                            <input id="icon_lock" type="password" class="validate" required>
                             <label for="icon_lock">Password</label>
                         </div>
                         <a class="waves-effect waves-light btn blue" id="login">Login</a>
@@ -71,12 +71,12 @@
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">lock</i>
-                            <input id="icon_lock" type="tel" class="validate" required>
+                            <input id="icon_lock" type="password" class="validate" required>
                             <label for="icon_lock">Password</label>
                         </div>
                         <div class="input-field col s12">
                             <i class="material-icons prefix">lock</i>
-                            <input id="icon_lock" type="tel" class="validate" required>
+                            <input id="icon_lock" type="password" class="validate" required>
                             <label for="icon_lock">Repeat Password</label>
                         </div>
                         <a class="waves-effect waves-light btn blue" id="create">Create</a>
@@ -103,8 +103,6 @@
                 </div>
             </div>
         </div>
-
-
     </main>
     <!-- Footer begins here -->
     <footer class="page-footer foot">
@@ -120,9 +118,19 @@
         </div>
     </footer>
     <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase-app.js"></script>
-    <script type="text/javascript" src='https://maps.googleapis.com/maps/api/js?key=AIzaSyA5r0oPvFpZLPNrlY2IWC5o4pjEQnjeRIo&libraries=places'></script>
+    <script>
+        var map;
+        function initMap() {
+          map = new google.maps.Map(document.getElementById('map'), {
+            center: {lat: -34.397, lng: 150.644},
+            zoom: 8
+          });
+        }
+      </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuokcqIcOqu-dUKKQUbT42sDl1I0-nWW0&callback=initMap">
   </script>
+   <script src = "https://maps.googleapis.com/maps/api/place/details/json?placeid=ChIJN1t_tDeuEmsRUsoyG83frY4&key=AIzaSyBDGJayxmu-IOMPRPBYOF7CvecU1JI-ahg"></script>
+   
     <script src="assets/javascript/app.js"></script>
 </body>
