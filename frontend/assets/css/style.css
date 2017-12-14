@@ -37,9 +37,42 @@ main {
     background-color: blue;
 }
 
+#activities { 
+    /* background-color: gray; */
+    display: none;
+    
+    
+}
+
+
+.card {
+    width: 410px;
+    height: 129px;
+    margin: 25px;
+    float: left;
+    
+}
+
+#mapDiv{
+
+    width: 412px;
+    height:398px;
+    float: right;
+    position: absolute;
+    background-color: orange;
+    margin-left: 920px;
+}
+
+h5 {
+    margin-left: 30px;
+
+}
+
+
 /* footer */
 .foot {
     border-top-color: blue;
     border-top-style: solid;
     background-color: gold;
 }
+
