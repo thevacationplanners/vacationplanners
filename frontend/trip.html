@@ -2,8 +2,6 @@
 
 <html lang="en-us">
 
-</html>
-
 <head>
     <meta charset="UTF-8">
     <title>Vacation Planners</title>
@@ -25,12 +23,31 @@
             <div class="container">
                 <a class="brand-logo center">
                     <!-- <i class="material-icons">flight</i> creates the icon(replace with logo or different icon) -->
-                    <i class="material-icons">flight</i>Welcome to Orlando</a>
+                    <img src="assets/images/icon.png" class="center"></img>Theme Park Planner</a>
             </div>
         </div>
     </nav>
 
     <main>
+        <div class="row">
+            <div class="second-page">
+                <div class="container">
+                    <div class="col s12 m12 l4">
+                        <div class="card medium left activities-card">
+                            <div class="card-image waves-effect waves-block waves-light card-pic">
+                                <img class="activator" src="assets/images/universal.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
         <!-- side navbar hidden until button is clicked on horizontal card triggered by jquery -->
         <ul id="slide-out" class="side-nav">
             <div class="container">
@@ -49,8 +66,41 @@
                             <input id="icon_lock" type="password" class="validate" required>
                             <label for="icon_lock">Password</label>
                         </div>
-                        <a class="waves-effect waves-light btn blue" id="login">Login</a>
                     </div>
+                    <div class="col s12 m12 l4">
+                        <div class="card medium left activities-card">
+                            <div class="card-image waves-effect waves-block waves-light card-pic">
+                                <img class="activator" src="assets/images/disney.jpeg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col  s12 m12 l4">
+                        <div class="card medium left activities-card">
+                            <div class="card-image waves-effect waves-block waves-light card-pic">
+                                <img class="activator" src="assets/images/seaworld.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title activator grey-text text-darken-4">Card Title
+                                    <i class="material-icons right">more_vert</i>
+                                </span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Card Title
+                                    <i class="material-icons right">close</i>
+                                </span>
+                                <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                            </div>
                 </form>
             </div>
             <li>
@@ -79,25 +129,77 @@
                             <input id="icon_lock" type="password" class="validate" required>
                             <label for="icon_lock">Repeat Password</label>
                         </div>
-                        <a class="waves-effect waves-light btn blue" id="create">Create</a>
                     </div>
-                </form>
+                </div>
             </div>
-        </ul>
-        <!-- This is where side navbar ends and horizontal card begins "the card is positioned 
+            <!-- side navbar hidden until button is clicked on horizontal card triggered by jquery -->
+            <div class="first-page">
+                <ul id="slide-out" class="side-nav">
+                    <div class="container">
+                        <h5>Login</h5>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" data-error="wrong" data-success="right" class="validate" required>
+                                    <label for="icon_prefix">User Name</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="icon_lock" type="tel" class="validate" required>
+                                    <label for="icon_lock">Password</label>
+                                </div>
+                                <a class="waves-effect waves-light btn blue login-btn" id="login">Login</a>
+                            </div>
+                        </form>
+                    </div>
+                    <li>
+                        <div class="divider"></div>
+                    </li>
+                    <div class="container">
+                        <h5>Create Account</h5>
+                    </div>
+                    <div class="row">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">account_circle</i>
+                                    <input id="icon_prefix" type="text" data-error="wrong" data-success="right" class="validate" required>
+                                    <label for="icon_prefix">
+                                        <b>User Name</b>
+                                    </label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="icon_lock" type="tel" class="validate" required>
+                                    <label for="icon_lock">Password</label>
+                                </div>
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock</i>
+                                    <input id="icon_lock" type="tel" class="validate" required>
+                                    <label for="icon_lock">Repeat Password</label>
+                                </div>
+                                <a class="waves-effect waves-light btn blue" id="create">Create</a>
+                            </div>
+                        </form>
+                    </div>
+                </ul>
+                <!-- This is where side navbar ends and horizontal card begins "the card is positioned 
             with css identified by class='main card'" -->
-        <div class="container">
-            <div class="col s12">
-                <div class="card horizontal main-card">
-                    <div class="card-stacked">
-                        <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
-                        </div>
-                        <div class="card-action">
-                            <!-- Button that triggers side navbar with .sideNav method provided by materialize
+                <div class="container">
+                    <div class="card horizontal main-card">
+                        <div class="card-stacked">
+                            <div class="card-content">
+                                <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            </div>
+                            <div class="card-action">
+                                <!-- Button that triggers side navbar with .sideNav method provided by materialize
                             in app.js file -->
-                            <a data-activates="slide-out" class="button-collapse waves-effect waves-blue btn blue">Sign In</a>
-                            </a>
+                                <a data-activates="slide-out" class="button-collapse waves-effect waves-blue btn blue">Sign In</a>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -134,3 +236,4 @@
    
     <script src="assets/javascript/app.js"></script>
 </body>
+</html>                      
