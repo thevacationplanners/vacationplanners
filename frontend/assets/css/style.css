@@ -46,6 +46,39 @@ main {
     background-color: blue;
 }
 
+#activities { 
+    /* background-color: gray; */
+    display: none;
+    
+    
+}
+
+
+.card {
+    width: 410px;
+    height: 129px;
+    margin: 25px;
+    float: left;
+    
+}
+
+#mapDiv{
+
+    width: 412px;
+    height:398px;
+    float: right;
+    position: absolute;
+    background-color: orange;
+    margin-left: 920px;
+}
+
+h5 {
+    margin-left: 30px;
+
+}
+
+
+
 .gutter {
     width: 20px;
 }
@@ -57,8 +90,10 @@ main {
     background-color: gold;
 }
 
+
 @media screen and (max-width: 768px){
     .main-card {
         width: 100%;
     }
 }
+

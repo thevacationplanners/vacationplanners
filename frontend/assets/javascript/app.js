@@ -9,7 +9,21 @@ $(document).ready(function(){
         // onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
     });
 
+    $("#login,#create").on("click", function () {
+        
+                document.getElementById("activities").style.display = "block";
+        
+            });
+
+    $("#login,#create").on("click", function () {
+                
+                document.getElementById("mainCard").style.display = "none";
+                
+             });
+        
+
     Background();
+
 });
 
 function Background(){
