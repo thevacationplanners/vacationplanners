@@ -8,4 +8,29 @@ $(document).ready(function(){
         // onOpen: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is opened
         // onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
     });
+
+    Background();
 });
+
+function Background(){
+    var imgs = [
+            "assets/images/universal2.jpg",
+            "assets/images/seaworld2.jpg",
+            "assets/images/disney2.jpg"
+        ],
+        len = imgs.length,
+        idx = -1;
+
+    setInterval(function(){
+        idx = (idx+1)%len;
+        $("main").css("background", "#000 url("+imgs[idx]+")no-repeat").css("background-size", "cover");
+    }, 5000);
+}
+
+
+$(".login-btn").on("click", function(){
+    $(".first-page").fadeOut("fast", "linear");
+    $(".second-page").slideDown("slow", "linear");
+})
+
+
