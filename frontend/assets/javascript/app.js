@@ -21,4 +21,60 @@ $(document).ready(function(){
                 
              });
         
+
+    Background();
+
 });
+
+function Background(){
+    var imgs = [
+            "assets/images/universal2.jpg",
+            "assets/images/seaworld2.jpg",
+            "assets/images/disney2.jpg"
+        ],
+        len = imgs.length,
+        idx = -1;
+
+    setInterval(function(){
+        idx = (idx+1)%len;
+        $("main").css("background", "#000 url("+imgs[idx]+")no-repeat").css("background-size", "cover");
+    }, 5000);
+}
+
+
+$(".login-btn").on("click", function(){
+    $(".first-page").fadeOut("fast", "linear");
+    $(".second-page").slideDown("slow", "linear");
+})
+
+var config = {
+    apiKey: "AIzaSyAprNzrbuZ_vyk9ZICWESoZ2g-lQjSMiW0",
+    authDomain: "vacation-traveler.firebaseapp.com",
+    databaseURL: "https://vacation-traveler.firebaseio.com",
+    projectId: "vacation-traveler",
+    storageBucket: "vacation-traveler.appspot.com",
+    messagingSenderId: "977337314611"
+  };
+  firebase.initializeApp(config);
+
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+  
+  //grabbing user input 
+  $("#login,#create").on("click", function () {
+        
+                document.getElementById("activities").style.display = "block";
+        
+            });
+
+    $("#login,#create").on("click", function () {
+                
+                document.getElementById("mainCard").style.display = "none";
+                
+             });
+        
+

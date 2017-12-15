@@ -13,9 +13,13 @@ body {
 
 /* background image */
 main {
-    background: url('../images/universal.jpg');
+    background: url('../images/disney2.jpg') no-repeat;
     background-size: cover;
     flex: 1 0 auto;
+}
+
+.second-page {
+    display: none;
 }
 
 /* side navbar */
@@ -26,10 +30,15 @@ main {
 
 /* horizontal card */
 .main-card {
-    border-color: blue;
-    border-style: solid;
+    /* border-color: blue;
+    border-style: solid; */
+    height: 200px;
     width: 300px;
     float: right;
+}
+
+.activities-card {
+    width: 100%;
 }
 
 /* buttons on card and side navbar */
@@ -69,10 +78,22 @@ h5 {
 }
 
 
+
+.gutter {
+    width: 20px;
+}
+
 /* footer */
 .foot {
     border-top-color: blue;
     border-top-style: solid;
     background-color: gold;
+}
+
+
+@media screen and (max-width: 768px){
+    .main-card {
+        width: 100%;
+    }
 }
 

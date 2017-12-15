@@ -1,0 +1,45 @@
+/* navbar */
+.top {
+    background-color: gold;
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* background image */
+main {
+    background: url('../images/universal.jpg');
+    background-size: cover;
+    flex: 1 0 auto;
+}
+
+/* side navbar */
+.side-nav {
+    border-left-style: solid;
+    border-left-color: blue;
+}
+
+/* horizontal card */
+.main-card {
+    border-color: blue;
+    border-style: solid;
+    width: 300px;
+    float: right;
+}
+
+/* buttons on card and side navbar */
+.btn {
+    background-color: blue;
+}
+
+/* footer */
+.foot {
+    border-top-color: blue;
+    border-top-style: solid;
+    background-color: gold;
+}
