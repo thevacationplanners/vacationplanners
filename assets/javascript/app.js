@@ -28,9 +28,9 @@ $(document).ready(function(){
 
 function Background(){
     var imgs = [
-            "assets/images/universal2.jpg",
-            "assets/images/seaworld2.jpg",
-            "assets/images/disney2.jpg"
+            "assets/images/niagaraFalls.jpg",
+            "assets/images/grandCanyon.jpg",
+            "assets/images/desotoCaverns.jpg"
         ],
         len = imgs.length,
         idx = -1;
@@ -57,7 +57,11 @@ var config = {
   };
   firebase.initializeApp(config);
 
+<<<<<<< HEAD
+ 
+=======
   //grabbing user input 
+>>>>>>> f5b6b52d85284a66e5b03ce1d2404d97a1d4c200
   $("#login,#create").on("click", function () {
         
                 document.getElementById("activities").style.display = "block";
