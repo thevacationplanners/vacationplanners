@@ -57,7 +57,11 @@ var config = {
   };
   firebase.initializeApp(config);
 
+<<<<<<< HEAD
  
+=======
+  //grabbing user input 
+>>>>>>> f5b6b52d85284a66e5b03ce1d2404d97a1d4c200
   $("#login,#create").on("click", function () {
         
                 document.getElementById("activities").style.display = "block";
