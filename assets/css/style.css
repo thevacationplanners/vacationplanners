@@ -13,7 +13,7 @@ body {
 
 /* background image */
 main {
-    background: url('../images/disney2.jpg') no-repeat;
+    background: url('../images/desotoCaverns.jpg') no-repeat;
     background-size: cover;
     flex: 1 0 auto;
 }
