@@ -9,17 +9,17 @@ $(document).ready(function(){
         // onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
     });
 
-    $("#login,#create").on("click", function () {
+    // $("#login,#create").on("click", function () {
         
-                document.getElementById("activities").style.display = "block";
+    //             document.getElementById("activities").style.display = "block";
         
-            });
+    //         });
 
-    $("#login,#create").on("click", function () {
+    // $("#login,#create").on("click", function () {
                 
-                document.getElementById("mainCard").style.display = "none";
+    //             document.getElementById("mainCard").style.display = "none";
                 
-             });
+    //          });
         
 
     Background();
@@ -57,21 +57,16 @@ var config = {
   };
   firebase.initializeApp(config);
 
-<<<<<<< HEAD
- 
-=======
-  //grabbing user input 
->>>>>>> f5b6b52d85284a66e5b03ce1d2404d97a1d4c200
-  $("#login,#create").on("click", function () {
+//   $("#login,#create").on("click", function () {
         
-                document.getElementById("activities").style.display = "block";
+//                 document.getElementById("activities").style.display = "block";
         
-            });
+//             });
 
-    $("#login,#create").on("click", function () {
+//     $("#login,#create").on("click", function () {
                 
-                document.getElementById("mainCard").style.display = "none";
+//                 document.getElementById("mainCard").style.display = "none";
                 
-             });
+//              });
         
 
