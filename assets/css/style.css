@@ -1,8 +1,9 @@
 /* navbar */
 .top {
-    background-color: gold;
+    background-color: green;
     border-bottom-style: solid;
     border-bottom-color: blue;
+    
 }
 
 body {
@@ -95,5 +96,8 @@ h5 {
     .main-card {
         width: 100%;
     }
+}
+.park{
+opacity: 1
 }
 
