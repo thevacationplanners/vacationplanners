@@ -34,7 +34,7 @@ main {
     /* border-color: blue;
     border-style: solid; */
     height: 200px;
-    width: 50%;
+    width: 300px;
     float: right;
 }
 
@@ -84,7 +84,6 @@ h5 {
     width: 20px;
 }
 
-
 /* footer */
 .foot {
     border-top-color: blue;
@@ -116,5 +115,3 @@ h5 {
 .card-three{
     height: 500px;
 }
-
-
