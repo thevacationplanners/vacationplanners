@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- Materialize link for components and grid system -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-    <link rel="stylesheet" styletype="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" styletype="text/css" href="assets/css/teststyle.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://www.gstatic.com/firebasejs/4.8.0/firebase.js"></script>
 </head>
@@ -37,10 +37,10 @@
         <div class="second-page">
             <div class="container">
                 <div class="row">
-                    <div class="col l6">
+                    <div class="col s3 m3 l3">
                         <div class="row">
-                            <div class="col l6 m6">
-                                <div class="card large cyan accent-1 park">
+                            <div class="col m12 l12">
+                                <div class="card-one small cyan accent-1">
                                     <div class="card-content black-text">
                                         <span class="card-title parks">Parks</span>
                                         <div class="collection"></div>
@@ -50,16 +50,30 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Itinerary Card -->
+
+                    <!-- Third Card -->
                     <!-- <div class="row"> -->
-                    <!-- <div class="second-page"> -->
-                    <!-- <div class="container"> -->
-                    <div class="col l6">
+                    <div class="col s6 m6 l6">
                         <div class="row">
-                            <div class="col l6 m6">
-                                <div class="card medium green darken-1 itinerary">
+                            <div class="col m12 l12">
+                                <div class="card-two large cyan accent-1">
+                                    <div class="card-content black-text">
+                                        <span class="card-title parks">Parks</span>
+                                        <div class="collection"></div>
+                                        <p>Parks: Henry has this stuff</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col s3 m6 l3">
+                        <div class="row">
+                            <div class="col m12 l12">
+                                <div class="card-three small green darken-1 itinerary">
                                     <div class="card-content white-text">
                                         <span class="card-title">Itinerary</span>
+                                        <div class="collection"></div>
                                         <p>You have chosen these parks:</p>
                                     </div>
                                 </div>
@@ -145,34 +159,35 @@
                 <div class="card horizontal main-card">
                     <div class="card-stacked">
                         <div class="card-content">
-                            <p>I am a very simple card. I am good at containing small bits of information.</p>
+                            <p>Start creating your itinerary here.</p>
                         </div>
                         <div class="card-action">
                             <!-- Button that triggers side navbar with .sideNav method provided by materialize
                             in app.js file -->
                             <a data-activates="slide-out" class="button-collapse waves-effect waves-blue btn blue">Sign In</a>
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
+
+
+
         <!-- <div class="col l2"></div> -->
     </main>
     <!-- Footer begins here -->
-    <!-- <footer class="page-footer foot">
+    <footer class="page-footer foot">
         <div class="container center">
             <div class="row">
                 <div class="col s12 l6">
-                    <h5 class="white-text center">Footer Content</h5>
+                    <h5 class="white-text center">National Parks</h5>
                 </div>
                 <div class="col s12 l6">
-                    <h5 class="white-text center">Footer Content</h5>
+                    <h5 class="white-text center">Vacation Planner</h5>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
 
     <script src="assets/javascript/app.js"></script>
     <script src="assets/javascript/auth.js"></script>
