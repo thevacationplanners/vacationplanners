@@ -1,0 +1,117 @@
+/* navbar */
+.top {
+    background-color: green;
+    border-bottom-style: solid;
+    border-bottom-color: blue;
+    
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* background image */
+main {
+    background: url('../images/desotoCaverns.jpg') no-repeat;
+    background-size: cover;
+    flex: 1 0 auto;
+}
+
+.second-page {
+    display: none;
+}
+
+/* side navbar */
+.side-nav {
+    border-left-style: solid;
+    border-left-color: blue;
+}
+
+/* horizontal card */
+.main-card {
+    /* border-color: blue;
+    border-style: solid; */
+    height: 200px;
+    width: 300px;
+    float: right;
+}
+
+.activities-card {
+    width: 100%;
+}
+
+/* buttons on card and side navbar */
+.btn {
+    background-color: blue;
+}
+
+#activities { 
+    /* background-color: gray; */
+    display: none;
+    
+    
+}
+
+
+/* .card {
+    width: 410px;
+    height: 129px;
+    margin: 25px;
+    float: left;
+    
+} */
+
+#mapDiv{
+
+    width: 412px;
+    height:398px;
+    float: right;
+    position: absolute;
+    background-color: orange;
+    margin-left: 920px;
+}
+
+h5 {
+    margin-left: 30px;
+
+}
+
+
+
+.gutter {
+    width: 20px;
+}
+
+/* footer */
+.foot {
+    border-top-color: blue;
+    border-top-style: solid;
+    background-color: gold;
+}
+
+
+@media screen and (max-width: 768px){
+    .main-card {
+        width: 100%;
+    }
+}
+/* .card-one{
+    width: 100px;
+    height: 200px;
+}
+.card-two{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+.card-three{
+    width: 100px;
+    height: 200px;
+} */
+.card-one,
+.card-two,
+.card-three{
+    height: 500px;
+}
