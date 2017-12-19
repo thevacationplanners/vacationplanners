@@ -55,13 +55,13 @@ main {
 }
 
 
-.card {
+/* .card {
     width: 410px;
     height: 129px;
     margin: 25px;
     float: left;
     
-}
+} */
 
 #mapDiv{
 
@@ -97,7 +97,21 @@ h5 {
         width: 100%;
     }
 }
-.park{
-opacity: 1
+/* .card-one{
+    width: 100px;
+    height: 200px;
 }
-
+.card-two{
+    width: 400px;
+    height: 400px;
+    background-color: white;
+}
+.card-three{
+    width: 100px;
+    height: 200px;
+} */
+.card-one,
+.card-two,
+.card-three{
+    height: 500px;
+}
