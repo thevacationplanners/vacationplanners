@@ -6,14 +6,14 @@ var parkURL = [];
 var results;
 var parkOrder;
 var at;
-var stateNames = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado",
-    "Connecticut", "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana",
-    "Iowa", "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
-    "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire",
-    "New Jersey", "New Mexico", "New York", "North Carolina", "North Dakota", "Ohio", "Oklahoma",
-    "Oregon", "Pennsylvania", "Rhode Island", "South Carolina", "South Dakota", "Tennessee", "Texas",
-    "Utah", "Vermont", "Virginia", "Washington", "West Virginia", "Wisconsin", "Wyoming"
-]
+
+var stateNames = ["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine",
+"Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","North Carolina","North Dakota","New York",
+"Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]
+
+var stateInitials = ["AL","AK","AZ","AR","CA","CO","CT","DE","FL","GA","HI","ID","IL","IN","IA","KS","KY","LA","ME","MD","MA","MI","MN","MS","MO","MT","NE","NV","NH","NJ","NM","NC","ND","NY","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VT","VA","WA","WV","WI","WY"]
+
+
 
 var APIKey = "5nO2ScMG5JxfsFKNtLCTOHEKBhaZQ3puPlwUA5Rn";
 
@@ -27,6 +27,11 @@ $(document).ready(function () {
         // onOpen: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is opened
         // onClose: function(el) { /* Do Stuff* / }, // A function to be called when sideNav is closed
     });
+
+    for (var i = 0; i < stateNames.length; i++) {
+        
+        $(".states-list").append("<a class='waves-effect waves-light btn stateNameButton' data-initials= "+ stateInitials[i] +" style='margin:5px;float:left'>" + stateNames[i] + "</a>");
+        }
 
     Background();
 
@@ -48,12 +53,17 @@ $(document).ready(function () {
     $(".login-btn").on("click", function () {
         $(".first-page").fadeOut("fast", "linear");
         $(".second-page").slideDown("slow", "linear");
-        at = ($(this).attr("data-attribute"))
-        grabInfo()
+        console.log(at);
+    })
+
+    $(".stateNameButton").on("click", function () {
+        at = ($(this).attr("data-initials"));
+        $(".parks-list").empty();
+        grabInfo();
         console.log(at)
     })
 
-
+    
     // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
     $('#modal1').modal({
         dismissible: true, // Modal can be dismissed by clicking outside of the modal
@@ -71,9 +81,6 @@ $(document).ready(function () {
             method: "GET"
         }).done(function (response) {
             results = response.data;
-            console.log(results)
-            console.log(results[0].description)
-            console.log(results[1].name)
             for (var i = 0; i < results.length; i++) {
                 states.push(results[i].fullName);
                 parkName.push(results[i].name);
